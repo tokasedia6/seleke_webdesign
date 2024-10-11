@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Destinations | Your Next Adventure Awaits</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #f0db4f;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #61dafb;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('explore.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        /* Destination Section */
+        .destinations {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .destinations h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 50px;
+        }
+
+        .destinations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .destination-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.4s ease;
+        }
+
+        .destination-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .destination-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .destination-info {
+            padding: 20px;
+        }
+
+        .destination-info h3 {
+            color: #e74c3c;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .destination-info p {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .destination-info a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .destination-info a:hover {
+            color: #e74c3c;
+        }
+
+        /* Map Section */
+        .map {
+            background-color: #222;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #f0db4f;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #61dafb;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2em;
+            }
+
+            .destination-info p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Discover Amazing Destinations</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Your Next Adventure Awaits</h2>
+    </div>
+
+    <!-- Destinations Section -->
+    <section class="destinations">
+        <h2>Top Travel Destinations</h2>
+        <div class="destinations-grid">
+            <div class="destination-card">
+                 <video width="640" height="360" controls>
+                  <source src="41.webm" type="video/mp4">
+                  <source src="path/to/your/video.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="destination-info">
+                    <h3>Victoria Falls</h3>
+                    <p>Experience the magnificent beauty of Victoria Falls, one of the largest waterfalls in the world.</p>
+                    <a href="https://en.wikipedia.org/wiki/Victoria_Falls" target="_blank">Read More</a>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="b.jpg" alt="Maasai Mara">
+                <div class="destination-info">
+                    <h3>Maasai Mara</h3>
+                    <p>Embark on a safari adventure and witness the incredible wildlife in Maasai Mara National Reserve.</p>
+                    <a href="https://en.wikipedia.org/wiki/Maasai_Mara" target="_blank">Read More</a>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="t.jpg" alt="Great Wall of China">
+                <div class="destination-info">
+                    <h3>Great Wall of China</h3>
+                    <p>Walk along the historic Great Wall of China, an architectural marvel stretching thousands of miles.</p>
+                    <a href="https://en.wikipedia.org/wiki/Great_Wall_of_China" target="_blank">Read More</a>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="f.jpeg" alt="Santorini">
+                <div class="destination-info">
+                    <h3>Santorini</h3>
+                    <p>Relax in the picturesque island of Santorini, known for its stunning sunsets and white-washed buildings.</p>
+                    <a href="https://en.wikipedia.org/wiki/Santorini" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="map">
+        <h3>Find Us on the Map</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1234567890!2d12.345678!3d-12.345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zZ2VvcGFuYWxwYXNrJTIwcmVnaW9u!5e0!3m2!1sen!2sus!4v1234567890"></iframe>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Travel Explorer. All Rights Reserved | <a href="contact.html">Contact Us</a> | <a href="index.html">Home</a></p>
+    </footer>
+</body>
+
+</html>
